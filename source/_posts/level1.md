@@ -26,10 +26,11 @@ swiper_index: 3
 .box_hide {
     width: 745px;
     height: 25px;
-    background-color: #ffffff;
+    background-color: #dddddd;
     position: relative;
     justify-content: center;
     overflow: hidden;
+    opacity: 0.3;
 }
 
 .box_hide:hover .content_hide {
@@ -38,7 +39,7 @@ swiper_index: 3
 }
 
 .content_hide {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
