@@ -32,3 +32,24 @@ author: D.S.
 *Author: D.S. 2023.*
 
 </div>
+
+{% timeline 開發流程, blue %}
+
+<!-- timeline 2022 - 2023 開始透過Hexo撰寫個人部落格 -->
+
+1. 主要**參考的網站**：[Link](https://akilar.top/)，引入hexo美化配置，以及SAO的內容
+
+2. 嘗試設計不同關卡，意使不同的人透過關卡了解作者
+
+3. 套用Butterfly主題並deploy到github上
+
+<!-- endtimeline -->
+
+<!-- timeline 2024 - Now 持續更新 & 修復bug -->
+
+1. 部分玩家回饋遊玩情形
+    *  修復Level 1 提示顯示問題
+
+<!-- endtimeline -->
+
+{% endtimeline %}

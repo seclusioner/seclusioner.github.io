@@ -548,3 +548,4 @@ Rmk：如果有看獵人，應該知道蟻王的台詞，~~會太兇嗎？~~
 
 <br><br>
 
+<div id="gitalk-container"></div>

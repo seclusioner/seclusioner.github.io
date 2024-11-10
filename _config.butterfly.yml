@@ -450,7 +450,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: # Valine,Disqus
+  use: 'gitalk' # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -480,11 +480,13 @@ livere:
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id:
-  client_secret:
-  repo:
-  owner:
-  admin:
+  client_id: 'Ov23liT1Uyl6tpLoyWui'
+  client_secret: '5d6b8ed949f0f6c9550120846ae4b472fdd48c4b'
+  repo: 'gitalk'
+  owner: 'seclusioner'
+  admin: ['seclusioner']
+  language: 'zh-TW'
+  createIssueManually: false
   option:
 
 # valine
@@ -951,6 +953,7 @@ css_prefix: true
 inject:
   head:
   - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+  - <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   - <script src="/js/SAO-Notify.js" async></script>
 
   bottom:
@@ -959,6 +962,7 @@ inject:
   - <script type="text/javascript" src="https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js"></script>
   - <script type="text/javascript" src="/js/languages.js"></script>
   - <script data-pjax type="text/javascript" src="/js/calendar.js"></script>
+  - <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
