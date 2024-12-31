@@ -1,5 +1,6 @@
 # Navigation bar settings (導航欄設置)
 # see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
+# 圖標來源：https://fontawesome.com/v6/icons
 # --------------------------------------
 
 nav:
@@ -20,6 +21,7 @@ menu:
   #   照片: /Gallery/ || fas fa-images
   #   音樂: /music/ || fas fa-music
   # 連結: /link/ || fas fa-link
+  Lab: /Lab/ || fa-solid fa-flask-vial
   關於: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -28,7 +30,7 @@ menu:
 highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
-highlight_shrink: true # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 highlight_height_limit: 200 # unit: px
 code_word_wrap: false
 

@@ -50,6 +50,14 @@ author: D.S.
 1. 部分玩家回饋遊玩情形
     *  修復Level 1 提示顯示問題
 
+2. 2024/11 新增gitalk評論系統
 <!-- endtimeline -->
 
 {% endtimeline %}
+
+{% folding green, 代辦事項&規劃 %}
+* 修改第一關提示字體過小的bug (修正中)
+* 美化blog頁面、引入其他插件
+* 優化最後一關的轉場動畫
+
+{% endfolding %}
