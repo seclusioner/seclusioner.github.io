@@ -13,4 +13,4 @@ author: D.S.
 
 Record 1: https://seclusioner.github.io/2024/11/02/Lab/
 
-Server: (Updating ...)
+Server: [(Updating ...)](https://seclusioner.github.io/2025/01/01/server/)
