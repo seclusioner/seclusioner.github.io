@@ -26,6 +26,25 @@ top_img: https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-mi
 
 這裡主要是文字為主，沒有圖文搭配，這一點比較抱歉，不過我相信各位可以的。
 
+當初開發的學長其實已經有詳細把booking system pull到 Github 上了，後來的maintainer們創了一個公用的實驗室Github將該repo fork過來，可以自行觀看，若是maintainer則看越詳細越好。
+
+{% link Lab Github, https://github.com/msplntustee/AIVC-Server-Booking, https://avatars.githubusercontent.com/u/215465283?v=4 %}
+
+<br>
+
+這邊會寫簡單的使用流程，過程**僅供參考**。
+
+## Docker
+在使用 GitHub 上的程式碼進行開發時，常會遇到環境相容性的問題。例如 PyTorch 和 CUDA 的版本對不上，導致程式無法順利執行；又或者當你完成開發並確認程式可正常運行後，換到另一台主機執行時，必須重新安裝所有相依的套件與工具，不僅耗時費力，還容易出現錯誤。
+
+`Docker` 是一種輕量級的容器（container）技術，能夠將整個開發環境（包括作業系統、所需的套件、函式庫等）打包成一個可移植的映像檔（image）。這樣就能避免每次換環境都要重新安裝，確保專案在不同主機上也能有一致的執行結果。
+
+{% image https://miro.medium.com/v2/resize:fit:1400/1*bcP-nlV1Z8geRV-AHA6O9g.png %}
+
+舉例來說，在撰寫深度學習相關程式時，常常需要搭配特定版本的 CUDA、cuDNN 和 PyTorch，手動安裝過程既繁瑣又容易出錯。此時可以直接從 Docker Hub 下載與需求相符的官方映像檔，再透過撰寫 Dockerfile 客製化環境，快速建構一個可重現的開發空間。
+
+那為甚麼我要在這邊提這個呢？因為從使用者（user）的角度出發，server的運作方式就是你以用戶身份遠端連線到某個 Host，並透過給定的 IP 和 Port 取得系統分配的container，這個container在build時會有預設的image，若要使用不同版本的image要跟maintainer說或是使用預設的幾個版本。
+
 ## 顯卡指令
 
 查看GPU相關資訊、driver的版本、CUDA版本等等，並與後續pytorch、cuDNN等版本做搭配
@@ -33,7 +52,7 @@ top_img: https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-mi
 nvidia-smi
 ```
 {% tip warning %}
-其他的指令可能需要額外安裝套件，請自行參閱查詢。
+其他的指令可能需要額外安裝套件，例如{% kbd nvitop %}，請自行參閱查詢。
 {% endtip %}
 
 ## Linux基本指令
@@ -54,32 +73,42 @@ cd <path>: 打開/退出目錄
 ssh booking@140.118.164.5X -p <port>
 ```
 
-總共有5張顯卡，顯卡配置： (傑生學長筆，2024.09.配置)
-aivc01 port:10000–> `3090`
-aivc02 port:9999 –> `A100`
-aivc02 port:10000–> `3090`
-aivc03 port:10000–> `RTX 8000`
-aivc04 port:10000–> `RTX 6000`
+總共有5張顯卡，這裡的port就是ssh連線的port號，顯卡配置： (Jason學長筆，2024.09.配置)
+
+{% kbd aivc01 %}（140.118.164.51）port:10000 –> 3090
+<br>
+
+{% kbd aivc02 %}（140.118.164.52）port:9999 –> A100
+<br>
+
+{% kbd aivc02 %}（140.118.164.52）port:10000–> 3090
+<br>
+
+{% kbd aivc03 %}（140.118.164.53）port:10000–> RTX 8000
+<br>
+
+{% kbd aivc04 %}（140.118.164.54）port:10000–> RTX 6000
+<br>
+
+<br>
 
 {% tip warning %}
-！！注意：這部分也是會變來變去，還是要自己去問比較好！！
+！！注意：這部分也是會變來變去，還是要自己去問比較好！！但我可能懶得改。
 {% endtip %}
-
 
 **租借command(挑其中一個)：**
 ``` bash
 ssh booking@140.118.164.5X -p <port>
 ```
-1.ssh booking@140.118.164.51 -p 10000
-2.ssh booking@140.118.164.52 -p 9999
-3.ssh booking@140.118.164.52 -p 10000
-4.ssh booking@140.118.164.53 -p 10000
-5.ssh booking@140.118.164.54 -p 10000
+
+範例:
+``` bash
+ssh booking@140.118.164.53 -p 10000
+```
 
 server default passwords: {% psw aivc %}
 
 進去後你會看到非常漂亮的大字：{% kbd AIVC %}
-
 
 這時候你會看到像是linux的terminal`(booking@...$)`，就可以輸入command租借了。
 
@@ -89,7 +118,7 @@ server default passwords: {% psw aivc %}
 booking -ls
 ```
 
-這時候你會看到你租借的訊息，在你的user_id後面會有一組port號(forward_port)，是你之後要登入時需輸入的。
+這時候你會看到你租借的訊息，在你的user_id後面會有一組port號（這裡則是docker給你的port號，跟前面的ssh port不同），是你之後要登入時需輸入的系統分配給你的container port。
 
 租借指令：
 
@@ -103,15 +132,15 @@ booking
 起始時間：可以打`now`，或是按照上面指示
 結束時間：可以打`2-day`、`2-week`等等，也可以中規中矩打標準格式
 
-另外，若有特殊需求或是任何狀況請直接跟管理server的人討論，這樣最快，不然有時候model太大可能會需要較多的資源(尤其最近LLM案子越來越多
+另外，若有特殊需求或是任何狀況請直接跟管理server的人（maintainer）討論，這樣最快，不然有時候model太大可能會需要較多的資源(尤其最近LLM案子越來越多
 
 **租借後半小時才會刷新**
 
 刷新後...
 
-假設我租借的IP是53、port是10338，則cmd的輸入指令有更改：
+假設我租借的IP是53、port是12345，則cmd的輸入指令有更改：
 ``` bash
-ssh root@140.118.164.53 -p 10338
+ssh root@140.118.164.53 -p 12345
 ```
 
 若有問題就填Yes就好，
@@ -124,8 +153,7 @@ ssh root@140.118.164.53 -p 10338
 ls
 ```
 
-你會看到有三個資料夾 【Backup】、【Dataset】以及【Work】，**一切的工作(建環境、coding)等都要在這個目錄下。**
-不然server刷新後你的檔案就會消失囉
+你會看到有三個資料夾 【Backup】、【Dataset】以及【Work】，**一切的工作(建環境、coding)等都要在Work這個目錄下**，不然server刷新後你的檔案就會消失囉（Work是預設的`WORKDIR`）。
 
 ### VScode設置與使用
 
@@ -133,16 +161,21 @@ ls
 
 VScode是常用拿來寫code的IDE之一。
 
-首先要去VScode裡安裝Remote SSH模組，然後選擇連到host，接著輸入：
+首先要去VScode裡安裝Remote SSH模組，然後選擇連到host，接著輸入（範例）：
 
 ``` bash
-ssh root@140.118.164.53 -p 10338
+ssh root@140.118.164.53 -p 12345
 ```
 一樣輸入你設定的密碼，
 
 接著打開【Work】的資料夾，於該目錄下建立環境。
 
 虛擬環境除了`anaconda`，還有`pyenv`，但我主要是用`anaconda`，所以我只寫`anaconda`的部分，若有其他人想要加其他內容上去再跟我說一聲，可以寫好給我我再更新~
+
+
+{% note info %}
+**Note：** 其實booking system有預先裝好虛擬環境tool，但我目前是用anaconda，若要使用預設環境可以去上面寫的實驗室Github booking system repo查。
+{% endnote %}
 
 - Anaconda 建置
 
@@ -297,7 +330,7 @@ tmux kill-server
 更改協定為SFTP
 輸入你借的主機：140.118.164.53 (假設)
 使用者名稱：root
-port: 10338 (前面分配的)
+port: 12345 (前面分配的)
 密碼：<你自己設定的>
 
 接著就可以看到旁邊是你server裡面Work目錄下的檔案了，把你需要的檔案從local端(左側)拖到server(右側)即可。
@@ -307,6 +340,7 @@ port: 10338 (前面分配的)
 
 出現以下情形：
 
+``` bash
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -320,9 +354,10 @@ Add correct host key in C:\\Users\\seclu/.ssh/known_hosts to get rid of this mes
 Offending ECDSA key in C:\\Users\\seclu/.ssh/known_hosts:3
 ECDSA host key for [140.118.164.53]:10000 has changed and you have requested strict checking.
 Host key verification failed.
+```
 
 Solution：去C:/Users/<username>/ >> 找到.ssh >> 有一個"known_hosts"的檔案，打開檔案刪掉記錄(**記得存檔**)，再連一次。
 
 希望有幫助到各位~
 
-若有錯誤或需要修正的地方，可以再評論或是直接聯絡我(或是未來管理網頁的人~)
+若有錯誤或需要修正的地方，可以再評論或是直接聯絡我，或是問學長姊，如有更多需求請找maintainer詢問（但主要還是要靠自己，不要一有事情就找maintainer）。
