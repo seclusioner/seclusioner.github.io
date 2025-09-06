@@ -45,6 +45,29 @@ top_img: https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-mi
 
 那為甚麼我要在這邊提這個呢？因為從使用者（user）的角度出發，server的運作方式就是你以用戶身份遠端連線到某個 Host，並透過給定的 IP 和 Port 取得系統分配的container，這個container在build時會有預設的image，若要使用不同版本的image要跟maintainer說或是使用預設的幾個版本。
 
+## 環境建置
+
+這部分有需要再看就好，我會依照當初VIC學長交接的內容下去寫，若有需要PPT再跟我說(PPT有圖)
+
+{% folding cyan, 察看環境建置 %}
+以我自己為例，主機顯卡是`RTX 5080`(當時較新的)，OS是Win 11、x64
+IDE：VScode
+Python：我選的版本是`3.11.9`[傳送門](https://www.python.org/downloads/release/python-3119/)(因為有時候新版的會有一些相容性的問題)，可去[官網](https://www.python.org/downloads/)查詢，會有不同的Release version，當然後續虛擬環境上可以指定，或是用docker的image建
+
+接著若要做AI，大致可分為：
+## 安裝Anaconda
+官網：https://www.anaconda.com/download/
+現在要下載好像要註冊帳號，就弄一下後，會有兩個類型
+
+## 安裝CUDA
+
+## 安裝cuDNN
+
+
+{% endfolding %}
+
+
+
 ## 顯卡指令
 
 查看GPU相關資訊、driver的版本、CUDA版本等等，並與後續pytorch、cuDNN等版本做搭配
@@ -248,11 +271,11 @@ ls ~/anaconda3
 ls ~/anaconda3/bin/conda
 ```
 Output:
-/root/anaconda3/bin/conda
+/root/Work/anaconda3/bin/conda
 
 表示剛剛確實有安裝成功，則可以直接輸入以下指令：
 ``` bash
-echo 'export PATH="/root/anaconda3/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="/root/Work/anaconda3/bin:$PATH"' >> ~/.bashrc
 ```
 
 接著再輸入
