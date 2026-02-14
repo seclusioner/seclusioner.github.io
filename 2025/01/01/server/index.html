@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Lab Server 租借&amp;使用 | D.S.</title><meta name="author" content="D.S."><meta name="copyright" content="D.S."><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="記錄server租借使用方式，若有錯誤麻煩告知，會陸續更新維護">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lab Server 租借&amp;使用">
+<meta property="og:url" content="https://seclusioner.github.io/2025/01/01/server/index.html">
+<meta property="og:site_name" content="D.S.">
+<meta property="og:description" content="記錄server租借使用方式，若有錯誤麻煩告知，會陸續更新維護">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-minimalism-wallpaper-preview.jpg">
+<meta property="article:published_time" content="2024-12-31T19:39:06.000Z">
+<meta property="article:modified_time" content="2025-09-06T08:56:01.205Z">
+<meta property="article:author" content="D.S.">
+<meta property="article:tag" content="Lab">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-minimalism-wallpaper-preview.jpg"><link rel="shortcut icon" href="https://pbs.twimg.com/media/D-pd2U_UwAUGknB?format=jpg&name=4096x4096"><link rel="canonical" href="https://seclusioner.github.io/2025/01/01/server/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/swiper@8.4.2/swiper-bundle.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Lab Server 租借&使用',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-09-06 16:56:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="/js/SAO-Notify.js" async></script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="loading-box"><style>css-doodle {--color: @p(#51eaea, #fffde1, #ff9d76, #FB3569);--rule: (:doodle {@grid: 30x1 / 18vmin;--deg: @p(-180deg, 180deg);}:container {perspective: 30vmin;}:after, :before {content: '';background: var(--color); @place-cell: @r(100%) @r(100%); @size: @r(6px); @shape: sqaure;} @place-cell: center; @size: 100%;box-shadow: @m2(0 0 50px var(--color));background: @m100(radial-gradient(var(--color) 50%, transparent 0)@r(-20%, 120%) @r(-20%, 100%) / 1px 1px no-repeat); will-change: transform, opacity; animation: scale-up 12s linear infinite; animation-delay: calc(-12s / @I * @i); @keyframes scale-up { 0%, 95.01%, 100% {transform: translateZ(0) rotate(0);opacity: 0;}10% {opacity: 1;}95% {transform: translateZ(35vmin) rotateZ(@var(--deg));}})}</style><css-doodle use="var(--rule)"></css-doodle><script async="async" src="https://npm.elemecdn.com/css-doodle@0.15.3/css-doodle.min.js"></script><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">載入中...</div></div></div><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = 'hidden';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+
+preloader.initLoading()
+setTimeout(function(){preloader.endLoading();}, 5000);
+//- window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-pen"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 歸檔</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/Lab/"><i class="fa-fw fa-solid fa-flask-vial"></i><span> Lab</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-minimalism-wallpaper-preview.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="D.S."><span class="site-name">D.S.</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-pen"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 歸檔</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/Lab/"><i class="fa-fw fa-solid fa-flask-vial"></i><span> Lab</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Lab Server 租借&amp;使用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2024-12-31T19:39:06.000Z" title="發表於 2025-01-01 03:39:06">2025-01-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2025-09-06T08:56:01.205Z" title="更新於 2025-09-06 16:56:01">2025-09-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Lab/">Lab</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><body onload="SAONotify('Server租借方法', '請詳細參閱且實際操作，步驟不一定都是對的');"><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body>
+
+<div class="tip home"><p>這裡會記錄租借server的方法，但請注意<strong>步驟不一定完全正確，請隨時注意最後更新的時間</strong>，還是須以當時管理server的人說的為主，或是直接請教正在使用的人</p>
+</div>
+<div class="tip ban"><p>這篇文章主要是給實驗室的人方便使用(因為我猜也沒多少人會來看我的網頁啦)，若有公開的問題或造成管理人的麻煩，不好意思再麻煩通知我，我馬上刪掉</p>
+</div>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>首先恭喜你進入我們實驗室，祝你好運~</p>
+<p>這裡主要是文字為主，沒有圖文搭配，這一點比較抱歉，不過我相信各位可以的。</p>
+<p>當初開發的學長其實已經有詳細把booking system pull到 Github 上了，後來的maintainer們創了一個公用的實驗室Github將該repo fork過來，可以自行觀看，若是maintainer則看越詳細越好。</p>
+<div class="tag link"><a class="link-card" title="Lab Github" target="_blank" rel="noopener" href="https://github.com/msplntustee/AIVC-Server-Booking"><div class="left"><img src="https://avatars.githubusercontent.com/u/215465283?v=4"/></div><div class="right"><p class="text">Lab Github</p><p class="url">https://github.com/msplntustee/AIVC-Server-Booking</p></div></a></div>
+<p><br></p>
+<p>這邊會寫簡單的使用流程，過程<strong>僅供參考</strong>。</p>
+<h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><p>在使用 GitHub 上的程式碼進行開發時，常會遇到環境相容性的問題。例如 PyTorch 和 CUDA 的版本對不上，導致程式無法順利執行；又或者當你完成開發並確認程式可正常運行後，換到另一台主機執行時，必須重新安裝所有相依的套件與工具，不僅耗時費力，還容易出現錯誤。</p>
+<p><code>Docker</code> 是一種輕量級的容器（container）技術，能夠將整個開發環境（包括作業系統、所需的套件、函式庫等）打包成一個可移植的映像檔（image）。這樣就能避免每次換環境都要重新安裝，確保專案在不同主機上也能有一致的執行結果。</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://miro.medium.com/v2/resize:fit:1400/1*bcP-nlV1Z8geRV-AHA6O9g.png"/></div></div>
+<p>舉例來說，在撰寫深度學習相關程式時，常常需要搭配特定版本的 CUDA、cuDNN 和 PyTorch，手動安裝過程既繁瑣又容易出錯。此時可以直接從 Docker Hub 下載與需求相符的官方映像檔，再透過撰寫 Dockerfile 客製化環境，快速建構一個可重現的開發空間。</p>
+<p>那為甚麼我要在這邊提這個呢？因為從使用者（user）的角度出發，server的運作方式就是你以用戶身份遠端連線到某個 Host，並透過給定的 IP 和 Port 取得系統分配的container，這個container在build時會有預設的image，若要使用不同版本的image要跟maintainer說或是使用預設的幾個版本。</p>
+<h2 id="環境建置"><a href="#環境建置" class="headerlink" title="環境建置"></a>環境建置</h2><p>這部分有需要再看就好，我會依照當初VIC學長交接的內容下去寫，若有需要PPT再跟我說(PPT有圖)</p>
+<details class="folding-tag" cyan><summary> 察看環境建置 </summary>
+              <div class='content'>
+              <p>以我自己為例，主機顯卡是<code>RTX 5080</code>(當時較新的)，OS是Win 11、x64<br>IDE：VScode<br>Python：我選的版本是<code>3.11.9</code><a target="_blank" rel="noopener" href="https://www.python.org/downloads/release/python-3119/">傳送門</a>(因為有時候新版的會有一些相容性的問題)，可去<a target="_blank" rel="noopener" href="https://www.python.org/downloads/">官網</a>查詢，會有不同的Release version，當然後續虛擬環境上可以指定，或是用docker的image建</p><p>接著若要做AI，大致可分為：</p><h2 id="安裝Anaconda"><a href="#安裝Anaconda" class="headerlink" title="安裝Anaconda"></a>安裝Anaconda</h2><p>官網：<a target="_blank" rel="noopener" href="https://www.anaconda.com/download/">https://www.anaconda.com/download/</a><br>現在要下載好像要註冊帳號，就弄一下後，會有兩個類型</p><h2 id="安裝CUDA"><a href="#安裝CUDA" class="headerlink" title="安裝CUDA"></a>安裝CUDA</h2><h2 id="安裝cuDNN"><a href="#安裝cuDNN" class="headerlink" title="安裝cuDNN"></a>安裝cuDNN</h2>
+              </div>
+            </details>
+<h2 id="顯卡指令"><a href="#顯卡指令" class="headerlink" title="顯卡指令"></a>顯卡指令</h2><p>查看GPU相關資訊、driver的版本、CUDA版本等等，並與後續pytorch、cuDNN等版本做搭配<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure><br><div class="tip warning"><p>其他的指令可能需要額外安裝套件，例如<kbd>nvitop</kbd>，請自行參閱查詢。</p>
+</div></p>
+<h2 id="Linux基本指令"><a href="#Linux基本指令" class="headerlink" title="Linux基本指令"></a>Linux基本指令</h2><p>ls: 查看目錄檔案<br>rm <filename> : 刪除某個檔案<br>mv <dir1> <dir2> : 將目錄1移動至目錄2<br>cd <path>: 打開/退出目錄</p>
+<p>這部分我有點懶，有需要可以去查，大致上常用的就那些~</p>
+<h2 id="華夏server"><a href="#華夏server" class="headerlink" title="華夏server"></a>華夏server</h2><h3 id="租借方式"><a href="#租借方式" class="headerlink" title="租借方式"></a>租借方式</h3><p>我以<code>Win10</code>為例，打開你的cmd，輸入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh booking@140.118.164.5X -p &lt;port&gt;</span><br></pre></td></tr></table></figure>
+<p>總共有5張顯卡，這裡的port就是ssh連線的port號，顯卡配置： (Jason學長筆，2024.09.配置)</p>
+<kbd>aivc01</kbd>（140.118.164.51）port:10000 –> 3090
+<br>
+
+<kbd>aivc02</kbd>（140.118.164.52）port:9999 –> A100
+<br>
+
+<kbd>aivc02</kbd>（140.118.164.52）port:10000–> 3090
+<br>
+
+<kbd>aivc03</kbd>（140.118.164.53）port:10000–> RTX 8000
+<br>
+
+<kbd>aivc04</kbd>（140.118.164.54）port:10000–> RTX 6000
+<br>
+
+<br>
+
+<div class="tip warning"><p>！！注意：這部分也是會變來變去，還是要自己去問比較好！！但我可能懶得改。</p>
+</div>
+<p><strong>租借command(挑其中一個)：</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh booking@140.118.164.5X -p &lt;port&gt;</span><br></pre></td></tr></table></figure></p>
+<p>範例:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh booking@140.118.164.53 -p 10000</span><br></pre></td></tr></table></figure></p>
+<p>server default passwords: <psw>aivc</psw></p>
+<p>進去後你會看到非常漂亮的大字：<kbd>AIVC</kbd></p>
+<p>這時候你會看到像是linux的terminal<code>(booking@...$)</code>，就可以輸入command租借了。</p>
+<p>查詢booking的情況:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">booking -<span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+<p>這時候你會看到你租借的訊息，在你的user_id後面會有一組port號（這裡則是docker給你的port號，跟前面的ssh port不同），是你之後要登入時需輸入的系統分配給你的container port。</p>
+<p>租借指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">booking</span><br></pre></td></tr></table></figure>
+<p>輸入後就會進到booking畫面，第一次進去需輸入你的學號和你自己設定的密碼，輸入完成後會請你輸入租借時間(開始/結束)，只須按照指示的格式輸入即可~<br>租借格式：</p>
+<p>起始時間：可以打<code>now</code>，或是按照上面指示<br>結束時間：可以打<code>2-day</code>、<code>2-week</code>等等，也可以中規中矩打標準格式</p>
+<p>另外，若有特殊需求或是任何狀況請直接跟管理server的人（maintainer）討論，這樣最快，不然有時候model太大可能會需要較多的資源(尤其最近LLM案子越來越多</p>
+<p><strong>租借後半小時才會刷新</strong></p>
+<p>刷新後…</p>
+<p>假設我租借的IP是53、port是12345，則cmd的輸入指令有更改：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@140.118.164.53 -p 12345</span><br></pre></td></tr></table></figure></p>
+<p>若有問題就填Yes就好，</p>
+<p>接著輸入你前面設定的密碼，一樣會顯示”AIVC”，就進到container了。</p>
+<p>進入後你可以輸入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+<p>你會看到有三個資料夾 【Backup】、【Dataset】以及【Work】，<strong>一切的工作(建環境、coding)等都要在Work這個目錄下</strong>，不然server刷新後你的檔案就會消失囉（Work是預設的<code>WORKDIR</code>）。</p>
+<h3 id="VScode設置與使用"><a href="#VScode設置與使用" class="headerlink" title="VScode設置與使用"></a>VScode設置與使用</h3><ul>
+<li>Remote SSH</li>
+</ul>
+<p>VScode是常用拿來寫code的IDE之一。</p>
+<p>首先要去VScode裡安裝Remote SSH模組，然後選擇連到host，接著輸入（範例）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@140.118.164.53 -p 12345</span><br></pre></td></tr></table></figure>
+<p>一樣輸入你設定的密碼，</p>
+<p>接著打開【Work】的資料夾，於該目錄下建立環境。</p>
+<p>虛擬環境除了<code>anaconda</code>，還有<code>pyenv</code>，但我主要是用<code>anaconda</code>，所以我只寫<code>anaconda</code>的部分，若有其他人想要加其他內容上去再跟我說一聲，可以寫好給我我再更新~</p>
+<div class="note info flat"><p><strong>Note：</strong> 其實booking system有預先裝好虛擬環境tool，但我目前是用anaconda，若要使用預設環境可以去上面寫的實驗室Github booking system repo查。</p>
+</div>
+<ul>
+<li>Anaconda 建置</li>
+</ul>
+<p>查看版本：<a target="_blank" rel="noopener" href="https://repo.anaconda.com/archive/">https://repo.anaconda.com/archive/</a></p>
+<p>首先進入bash：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>下載 Anaconda 安裝包：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
+<p>若安裝包下載成功會出現下載訊息，若失敗或找不到檔案則會報錯 (Error 404)</p>
+<ol>
+<li>安裝 Anaconda：<br>注意：版本可能會隨著硬體設備更新而不同，因此還是要去上面的網址裡面找到比較新的版本，這邊以我當時的版本為主<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-2024.02-1-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
+他會顯示 “Welcome to Anaconda3 … “</li>
+</ol>
+<p>接著就一直按Enter，直到他問你yes/no，輸入yes就對了。<br>然後就按Enter，系統就會自動安裝了。</p>
+<div class="tip warning"><p>補：若要問你安裝路徑，應該要選擇Work的目錄下(直接輸入路徑即可，”root/Work/anaconda3”)，不然下次刷新會需要重裝</p>
+</div>
+<p>安裝command一樣是：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-2024.02-1-Linux-x86_64.sh</span><br></pre></td></tr></table></figure></p>
+<p>最後他會問 “You can undo this by running <code>conda init --reverse $SHELL</code>?”<br>我這邊輸入”no” —&gt; 但他應該是要自動將anaconda3加入環境變數，所以應該是要選”yes”<br>安裝就結束了。</p>
+<ol>
+<li>重新加載 shell 設定（或重新啟動你的終端）</li>
+</ol>
+<p>進入bash:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br></pre></td></tr></table></figure><br>你會進入terminal (root@…#)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+<p>這時候運行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda --version</span><br></pre></td></tr></table></figure>
+<p>如果你前面選no會報錯(如果有顯示版本表示沒有問題，你就可以跳過以下部分)，這是因為沒有將anaconda加到環境變數，因此你需要執行以下步驟：</p>
+<p>確認 Anaconda 安裝目錄：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> ~/anaconda3</span><br></pre></td></tr></table></figure>
+<p>他會顯示許多檔案(anaconda安裝的檔案)，這時候檢查有沒有安裝成功：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> ~/anaconda3/bin/conda</span><br></pre></td></tr></table></figure><br>Output:<br>/root/Work/anaconda3/bin/conda</p>
+<p>表示剛剛確實有安裝成功，則可以直接輸入以下指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export PATH=&quot;/root/Work/anaconda3/bin:$PATH&quot;&#x27;</span> &gt;&gt; ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>接著再輸入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda --version</span><br></pre></td></tr></table></figure></p>
+<p>即可看到conda版本。<br>補：<br>若沒進入conda，則再次輸入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>若terminal前面多了<code>(base)</code>，表示成功進入anaconda的terminal，就可以開始開發了。</p>
+<h3 id="tmux"><a href="#tmux" class="headerlink" title="tmux"></a>tmux</h3><p>若想要本地端關機後code一樣可以在server上跑，則可以使用tmux。</p>
+<p>進入container後，於進入bash之前，可以輸入以下指令：</p>
+<ol>
+<li><p>Start tmux session<br>自動編號：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux</span><br></pre></td></tr></table></figure>
+<p>指定名稱 (session_name）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux new -s &lt;session_name&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>List session<br>可以使用此指令查看你剛剛創建的session：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Rmk: 若出現error或是沒有該檔案/目錄，可以直接回到上面創建一個ne session再輸入，應該就會有了 (之前有base，但後來沒看到了)</p>
+<ol>
+<li><p>Re-connect to session<br>連接到指定會話：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux attach -t &lt;session_name_or_number&gt;</span><br></pre></td></tr></table></figure>
+<p>連接到最近的會話：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux attach</span><br></pre></td></tr></table></figure>
+<p>補：<code>attach</code> 可以直接打 <code>a</code></p>
+</li>
+<li><p>Close session</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+<p>或是Ctrl + D</p>
+</li>
+<li><p>Delete session<br>刪除指定會話：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux kill-session -t &lt;session_name_or_number&gt;</span><br></pre></td></tr></table></figure>
+<p>刪除所有會話：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux kill-server</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="FileZilla-Client"><a href="#FileZilla-Client" class="headerlink" title="FileZilla Client"></a>FileZilla Client</h3><p>若要傳輸相關檔案(例如dataset)，則需透過此軟體去做。</p>
+<p>一開始連線會報錯，這是因為系統預設是FTP傳輸，但server系統是用SFTP，因此需先去設定站台</p>
+<p>檔案 &gt;&gt; 站台管理員 &gt;&gt; 新增站台</p>
+<p>更改協定為SFTP<br>輸入你借的主機：140.118.164.53 (假設)<br>使用者名稱：root<br>port: 12345 (前面分配的)<br>密碼：&lt;你自己設定的&gt;</p>
+<p>接著就可以看到旁邊是你server裡面Work目錄下的檔案了，把你需要的檔案從local端(左側)拖到server(右側)即可。</p>
+<h2 id="Server-ssh-連不進去"><a href="#Server-ssh-連不進去" class="headerlink" title="Server ssh 連不進去"></a>Server ssh 連不進去</h2><p>出現以下情形：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!</span><br><span class="line">Someone could be eavesdropping on you right now (man-in-the-middle attack)!</span><br><span class="line">It is also possible that a host key has just been changed.</span><br><span class="line">The fingerprint <span class="keyword">for</span> the ECDSA key sent by the remote host is</span><br><span class="line">SHA256:dIV67hEbVNQVU8J6Jr6VYc2amZI08xmsS7Y0QAZt7po.</span><br><span class="line">Please contact your system administrator.</span><br><span class="line">Add correct host key <span class="keyword">in</span> C:\\Users\\seclu/.ssh/known_hosts to get rid of this message.</span><br><span class="line">Offending ECDSA key <span class="keyword">in</span> C:\\Users\\seclu/.ssh/known_hosts:3</span><br><span class="line">ECDSA host key <span class="keyword">for</span> [140.118.164.53]:10000 has changed and you have requested strict checking.</span><br><span class="line">Host key verification failed.</span><br></pre></td></tr></table></figure>
+<p>Solution：去C:/Users/<username>/ &gt;&gt; 找到.ssh &gt;&gt; 有一個”known_hosts”的檔案，打開檔案刪掉記錄(<strong>記得存檔</strong>)，再連一次。</p>
+<p>希望有幫助到各位~</p>
+<p>若有錯誤或需要修正的地方，可以再評論或是直接聯絡我，或是問學長姊，如有更多需求請找maintainer詢問（但主要還是要靠自己，不要一有事情就找maintainer）。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Lab/">Lab</a></div><div class="post_share"><div class="social-share" data-image="https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-minimalism-wallpaper-preview.jpg" data-sites="facebook"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/11/02/Lab/" title="Lab record"><i class="fas fa-chevron-right next-icon"><div class="next-label">下一篇</div></i></a><div class="pagination-card"><img class="cover" src="https://i.pinimg.com/564x/20/e8/e3/20e8e36bdc78434772f75b64db627ea4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Lab record</div></div></div></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 評論</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="cols"><div class="col"><div class="container"><div class="front avatarPanel"><div class="inner"><div class="player-title">Author</div><div class="player-avatar"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div></div></div><div class="back attributesPanel"><div class="inner"><div class="player-lv">LV.2</div><div class="player-name">D.S.</div><div class="attributes-value"><div class="attributes-value-item"><a href="/archives/"><div class="attributes">文章</div><div class="value-bar"><div class="value-bar-fill" style="width:15.00%"><div class="value-bar-fill-in" style="background: rgba(89, 230, 54,0.6)"></div></div></div><span>15/100</span></a></div><div class="attributes-value-item"><a href="/tags/"><div class="attributes">標籤</div><div class="value-bar"><div class="value-bar-fill" style="width:7.00%"><div class="value-bar-fill-in" style="background: rgba(224, 20, 20, 0.6)"></div></div></div><span>7/100</span></a></div><div class="attributes-value-item"><a href="/categories/"><div class="attributes">分類</div><div class="value-bar"><div class="value-bar-fill" style="width:6.00%"><div class="value-bar-fill-in" style="background: rgba(30, 97, 226, 0.6)"></div></div></div><span>6/100</span></a></div></div></div></div></div></div><div class="col"><div class="container"><div class="front descriptionPanel"><div class="inner"><div class="player-title">D.S.</div><div class="player_description"></div><div class="play-bottom"></div><div class="h3">有興趣不妨看看吧！</div><div class="h3"><i>Life is non-ergodic</i></div></div></div><div class="back buttonPanel"><div class="inner"><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/seclusioner"><i class="fab fa-github"></i><span>D.S. 's Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/seclusioner" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://www.youtube.com/channel/UChlTC056Y_DJNUlGJdcd4sQ" target="_blank" title="Youtube"><i class="fab fa-youtube" style="color: #ff0000;"></i></a><a class="social-icon" href="https://youtu.be/djV11Xbc914" target="_blank" title="Facebook"><i class="fab fa-facebook" style="color: #191970;"></i></a><a class="social-icon" href="mailto:fileuseingbyds@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #a9a9a9;"></i></a><a class="social-icon" href="https://www.instagram.com/d.seclusioner/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram-square" style="color: #ff8c00;"></i></a></div><div class="play-bottom"></div></div></div></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Welcome !!!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker"><span class="toc-number">2.</span> <span class="toc-text">Docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">環境建置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%9DAnaconda"><span class="toc-number">4.</span> <span class="toc-text">安裝Anaconda</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%9DCUDA"><span class="toc-number">5.</span> <span class="toc-text">安裝CUDA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%9DcuDNN"><span class="toc-number">6.</span> <span class="toc-text">安裝cuDNN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%AF%E5%8D%A1%E6%8C%87%E4%BB%A4"><span class="toc-number">7.</span> <span class="toc-text">顯卡指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4"><span class="toc-number">8.</span> <span class="toc-text">Linux基本指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8F%AF%E5%A4%8Fserver"><span class="toc-number">9.</span> <span class="toc-text">華夏server</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%9F%E5%80%9F%E6%96%B9%E5%BC%8F"><span class="toc-number">9.1.</span> <span class="toc-text">租借方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VScode%E8%A8%AD%E7%BD%AE%E8%88%87%E4%BD%BF%E7%94%A8"><span class="toc-number">9.2.</span> <span class="toc-text">VScode設置與使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tmux"><span class="toc-number">9.3.</span> <span class="toc-text">tmux</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FileZilla-Client"><span class="toc-number">9.4.</span> <span class="toc-text">FileZilla Client</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Server-ssh-%E9%80%A3%E4%B8%8D%E9%80%B2%E5%8E%BB"><span class="toc-number">10.</span> <span class="toc-text">Server ssh 連不進去</span></a></li></ol></div></div><div class="card-widget card-recommend-post"><div class="item-headline"><i class="fas fa-dharmachakra"></i><span>相關推薦</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/11/02/Lab/" title="Lab record"><img src="https://i.pinimg.com/564x/20/e8/e3/20e8e36bdc78434772f75b64db627ea4.jpg" alt="Lab record"></a><div class="content"><a class="title" href="/2024/11/02/Lab/" title="Lab record">Lab record</a><time datetime="2024-11-02" title="发表于 2024-11-02">2024-11-02</time></div></div></div></div></div></div></main><footer id="footer"><div id="ark-footer-wraper"><div class="ark-footer-container"><div class="ark-footer-left-corner"><div id="ark-footer-bdage-container"><div class="ark-footer-bdage swiper-wrapper"><a class="ark-bdage-item swiper-slide" href="https://hexo.io/" title="Hexo" target="_blank"><svg class="icon ark-decoration" aria-hidden="true"><use xlink:href="#icon-hexo"></use></svg><span>Frame-Hexo</span></a><a class="ark-bdage-item swiper-slide" href="https://butterfly.js.org/" title="Butterfly_v4.10.0" target="_blank"><svg class="icon ark-decoration" aria-hidden="true"><use xlink:href="#icon-Butterfly"></use></svg><span>Theme-Butterfly</span></a><a class="ark-bdage-item swiper-slide" href="https://github.com/" title="Github Website" target="_blank"><svg class="icon ark-decoration" aria-hidden="true"><use xlink:href="#icon-GitHub"></use></svg><span>Source-Github</span></a><a class="ark-bdage-item swiper-slide" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="無商業用途" target="_blank"><svg class="icon ark-decoration" aria-hidden="true"><use xlink:href="#icon-copyright"></use></svg><span>Copyright-BY-NC-SA-4</span></a></div></div><div class="ark-footer-copyright">&copy;2022 - 2026 By D.S.</div></div><div class="ark-footer-right-corner" id="workboard"></div><script async="async" src="/js/custom/runtime.js"> </script></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i><span>閱讀模式</span></button><button id="translateLink" type="button" title="簡繁轉換"><i>繁</i><span>簡繁轉換</span></button><button id="darkmode" type="button" title="晝夜轉換"><i class="fas fa-adjust"></i><span>晝夜轉換</span></button><button id="hide-aside-btn" type="button" title="欄位切換"><i class="fas fa-arrows-alt-h"></i><span>欄位切換</span></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="其他設定"><i class="fas fa-cog fa-spin"></i><span>其他設定</span></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i><span>目錄</span></button><a id="to_comment" href="#post-comment" title="直達評論"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到頂部"><i class="fas fa-arrow-up"></i><span>回到頂部</span></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script defer src="https://npm.elemecdn.com/swiper@8.4.2/swiper-bundle.min.js"></script><script defer data-pjax src="/js/custom/swiper_init.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'Ov23liT1Uyl6tpLoyWui',
+      clientSecret: '5d6b8ed949f0f6c9550120846ae4b472fdd48c4b',
+      repo: 'gitalk',
+      owner: 'seclusioner',
+      admin: ['seclusioner'],
+      id: 'de20e213036e5f8e88418f16dfe02606',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script src="/js/fixed-pagination.js" async></script><script data-pjax defer src="/js/custom/fixed_card_widget.js"></script><script type="text/javascript" src="https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js"></script><script type="text/javascript" src="/js/languages.js"></script><script data-pjax type="text/javascript" src="/js/calendar.js"></script><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><div id="SAO-back"><div id="SAO-menu"><div id="SAO-menu-content"><div class="utils-list"><div class="utils-list-item"><div class="user-panel" style="top:-170;"><div class="user-panel-name">Help</div><div class="user-panel-img"><img src="/img/info.png"/></div><div class="user-panel-properties">Anything can I help you ?</div></div><i class="fa fa-question-circle" onclick="panelAudio();UtilsClick()"></i><div class="menu-list" style="top:-103px;"><div class="menu-list-item"><i class="fa fa-comment-dots" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://google.com')},500);">Google</i></div><div class="menu-list-item"><i class="fa fa-user-friends" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://facebook.com')},500);">FB</i></div><div class="menu-list-item"><i class="fa fa-folder-open" onclick="panelAudio();MenusClick()">TEST</i><div class="menu-child" style="top:-40px;"><div class="menu-list-child"><i class="fa fa-file-invoice" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://example.com')},500);">List1</i></div></div></div></div></div><div class="utils-list-item"><div class="user-panel" style="top:-170;"><div class="user-panel-name">Link</div><div class="user-panel-img"><img src="https://cdn-icons-png.flaticon.com/512/6928/6928929.png"/></div><div class="user-panel-properties">SAO 設置參考 (來自©Akilarの糖果屋)</div></div><i class="fa fa-link" onclick="panelAudio();UtilsClick()"></i><div class="menu-list" style="top:-183px;"><div class="menu-list-item"><i class="fa fa-solid fa-screwdriver-wrench" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/posts/fd243d7/')},500);">清單配置</i></div><div class="menu-list-item"><i class="fa fa-duotone fa-screwdriver-wrench" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/posts/e5cda1b6/')},500);">翻轉面板</i></div><div class="menu-list-item"><i class="fa fa-sharp fa-regular fa-screwdriver-wrench" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/posts/eb030e5a/')},500);">Card-Widget</i></div><div class="menu-list-item"><i class="fa fa-sharp fa-regular fa-screwdriver-wrench" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/posts/d0d69f76/')},500);">Notify</i></div><div class="menu-list-item"><i class="fa fa-sharp fa-regular fa-screwdriver-wrench" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/posts/3d221bf2/')},500);">Loading</i></div><div class="menu-list-item"><i class="fa fa-sharp fa-regular fa-screwdriver-wrench" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/posts/b77e1c58/')},500);">上下按鈕</i></div><div class="menu-list-item"><i class="fa fa-duotone fa-magnifying-glass" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/')},500);">Akilarの糖果屋</i></div></div></div><div class="utils-list-item"><div class="user-panel"><div class="user-panel-name">Instructions</div><div class="user-panel-img"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/51d94246-5977-4752-98be-2d33d9c1a682/d7qhhas-5c76e0ac-8abf-4d88-80fb-a0a8e0a65dfe.png"/></div><div class="user-panel-properties"><center><h4>SAO_Utils_Web 2.0</h4></center><p>點按選項可以持續顯示下级清單。您可以按<kbd>ctrl</kbd>+<kbd>右鍵</kbd>使用原本的清單。</p><center>參考至 ©Akilarの糖果屋</center></div></div><i class="fa fa-cog" onclick="panelAudio();UtilsClick()"></i><div class="menu-list" style="top:-103px;"><div class="menu-list-item"><i class="fa fa-tools" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://akilar.top/posts/fd243d7/')},500);">Option</i></div><div class="menu-list-item"><i class="fa fa-question-circle" onclick="clickAudio();setTimeout(function(){SAOclose();linkStart('https://jq.qq.com/?_wv=1027&amp;k=a08BZRzs')},500);">Help</i></div><div class="menu-list-item"><i class="fa fa-sign-out-alt" onclick="alertAudio();openLogout()">Logout</i></div></div></div><div class="utils-list-item"><div class="user-panel"><div class="user-panel-name">Close</div><div class="user-panel-img"><img src="https://cdn-icons-png.flaticon.com/512/6897/6897039.png"/></div><div class="user-panel-properties"><p>永久關閉SAO右键菜單，需刪除歷程記錄才可以再次開啟，請確認後再按。</p></div></div><i class="fa fa-power-off" onclick="alertAudio();SAOKeepOff()" title="永久關閉SAO右键菜单(確認才可以按)"></i></div></div></div></div></div><div id="SAO-logout"><div class="logout-title">Alert</div><div class="logout-alert">是否要退出?</div><div class="logout-button"><span class="logout-confirm"><button class="far fa-circle" type="button" name="confirm" onclick="clickAudio();confirmLogout()"></button></span><span class="logout-cancel"><button class="fa fa-times" type="button" name="cancel" onclick="panelAudio();cancelLogout()"></button></span></div></div><audio id="SAOlauncher" src="/assets/Launcher.wav"></audio><audio id="SAOClick" src="/assets/Click.wav"></audio><audio id="SAOPanel" src="/assets/Panel.wav"></audio><audio id="SAOAlert" src="/assets/Alert.wav"></audio><script async="async" src="/js/SAO_Menu.js"></script></div></body></html>
